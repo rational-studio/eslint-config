@@ -1,0 +1,26 @@
+{
+  "name": "eslint-plugin-rational-studio",
+  "version": "0.0.1",
+  "description": "ESLint Rules used in Rational Studio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier **/*.{js,json,ts,tsx} --write"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rational-studio/eslint-plugin-rational-studio.git"
+  },
+  "author": "Zhongliang Wang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rational-studio/eslint-plugin-rational-studio/issues"
+  },
+  "homepage": "https://github.com/rational-studio/eslint-plugin-rational-studio#readme",
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^1.4.2",
+    "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-react-hooks": "^1.5.1",
+    "eslint": "^5.15.3"
+  }
+}

@@ -21,6 +21,6 @@
     "@typescript-eslint/eslint-plugin": "^1.5.0",
     "eslint-plugin-react": "^7.12.4",
     "eslint-plugin-react-hooks": "^1.6.0",
-    "eslint": "^5.15.3"
+    "eslint": "^5.16.0"
   }
 }

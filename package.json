@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-rational-studio",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "ESLint Rules used in Rational Studio",
   "main": "index.js",
   "scripts": {
@@ -20,6 +20,7 @@
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^1.7.0",
     "eslint": "^5.16.0",
+    "eslint-plugin-import": "^2.17.2",
     "eslint-plugin-monorepo": "^0.2.1",
     "eslint-plugin-react": "^7.12.4",
     "eslint-plugin-react-hooks": "^1.6.0"

@@ -11,6 +11,9 @@ module.exports = {
         'plugin:react/recommended',
         'plugin:@typescript-eslint/recommended',
         'plugin:monorepo/recommended',
+        'plugin:import/errors',
+        'plugin:import/warnings',
+        'plugin:import/typescript',
       ],
       globals: {
         Atomics: 'readonly',
@@ -23,7 +26,13 @@ module.exports = {
         ecmaVersion: 2018,
         sourceType: 'module',
       },
-      plugins: ['@typescript-eslint', 'react', 'react-hooks'],
+      plugins: [
+        '@typescript-eslint',
+        'react',
+        'react-hooks',
+        'monorepo',
+        'import',
+      ],
       rules: {
         'react-hooks/rules-of-hooks': 'error',
         'react-hooks/exhaustive-deps': 'warn',

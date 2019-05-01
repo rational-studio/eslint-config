@@ -45,6 +45,11 @@ module.exports = {
         react: {
           version: '16.8',
         },
+        'import/extensions': ['.js', '.jsx', '.ts', '.tsx'],
+        'import/parsers': {
+          '@typescript-eslint/parser': ['.ts', '.tsx'],
+        },
+        'import/ignore': ['.scss'],
       },
     },
   },

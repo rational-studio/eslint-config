@@ -40,12 +40,14 @@ module.exports = {
         '@typescript-eslint/indent': 'off',
         '@typescript-eslint/explicit-function-return-type': 'off',
         '@typescript-eslint/camelcase': 'off',
+        // Temporarily disabled since "as const" is not allowed atm
+        '@typescript-eslint/no-object-literal-type-assertion': 'off',
+        'react/display-name': 'off',
       },
       settings: {
         react: {
           version: '16.8',
         },
-        'import/ignore': ['.scss'],
       },
     },
   },

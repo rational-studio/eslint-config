@@ -37,6 +37,7 @@ module.exports = {
         'react-hooks/rules-of-hooks': 'error',
         'react-hooks/exhaustive-deps': 'warn',
         'react/prop-types': 'off',
+
         '@typescript-eslint/indent': 'off',
         '@typescript-eslint/explicit-function-return-type': 'off',
         '@typescript-eslint/camelcase': 'off',

@@ -35,7 +35,10 @@ module.exports = {
       ],
       rules: {
         'react-hooks/rules-of-hooks': 'error',
-        'react-hooks/exhaustive-deps': 'warn',
+        'react-hooks/exhaustive-deps': [
+          { additionalHooks: 'usePromiseCallback' },
+          'warn',
+        ],
         'react/prop-types': 'off',
 
         '@typescript-eslint/indent': 'off',

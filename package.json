@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-rational-studio",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "ESLint Rules used in Rational Studio",
   "main": "index.js",
   "scripts": {
@@ -18,15 +18,15 @@
   },
   "homepage": "https://github.com/rational-studio/eslint-plugin-rational-studio#readme",
   "devDependencies": {
-    "typescript": "3.7.0-beta"
+    "typescript": "3.7.1-rc"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "~2.4.0",
-    "@typescript-eslint/parser": "~2.4.0",
-    "eslint": "~6.5.1",
+    "@typescript-eslint/eslint-plugin": "~2.5.0",
+    "@typescript-eslint/parser": "~2.5.0",
+    "eslint": "~6.6.0",
     "eslint-plugin-import": "~2.18.2",
     "eslint-plugin-monorepo": "~0.2.1",
     "eslint-plugin-react": "~7.16.0",
-    "eslint-plugin-react-hooks": "~2.1.2"
+    "eslint-plugin-react-hooks": "~2.2.0"
   }
 }

@@ -11,9 +11,7 @@ module.exports = {
         'eslint:recommended',
         'plugin:react/recommended',
         'plugin:@typescript-eslint/recommended',
-        'plugin:import/errors',
-        'plugin:import/warnings',
-        'plugin:import/typescript',
+        'plugin:import/recommended',
         'plugin:jest/recommended',
       ],
       globals: {
@@ -46,7 +44,14 @@ module.exports = {
         react: {
           version: '16.12',
         },
+        'import/extensions': ['.ts', '.tsx', '.d.ts', '.js', '.jsx'],
+        'import/parsers': {
+          '@typescript-eslint/parser': ['.ts', '.tsx'],
+        },
         'import/resolver': {
+          node: {
+            extensions: ['.js', '.jsx'],
+          },
           typescript: {
             alwaysTryTypes: true,
           },

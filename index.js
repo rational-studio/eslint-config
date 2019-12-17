@@ -9,8 +9,9 @@ module.exports = {
       },
       extends: [
         'eslint:recommended',
-        'plugin:react/recommended',
+        'plugin:@typescript-eslint/eslint-recommended',
         'plugin:@typescript-eslint/recommended',
+        'plugin:react/recommended',
         'plugin:import/recommended',
         'plugin:jest/recommended',
       ],
@@ -25,7 +26,7 @@ module.exports = {
         ecmaVersion: 2018,
         sourceType: 'module',
       },
-      plugins: ['@typescript-eslint', 'react', 'react-hooks', 'import', 'jest'],
+      plugins: ['@typescript-eslint', 'react', 'react-hooks', 'jest'],
       rules: {
         'react-hooks/rules-of-hooks': 'error',
         'react-hooks/exhaustive-deps': [
@@ -43,18 +44,6 @@ module.exports = {
       settings: {
         react: {
           version: '16.12',
-        },
-        'import/extensions': ['.ts', '.tsx', '.d.ts', '.js', '.jsx'],
-        'import/parsers': {
-          '@typescript-eslint/parser': ['.ts', '.tsx'],
-        },
-        'import/resolver': {
-          node: {
-            extensions: ['.js', '.jsx'],
-          },
-          typescript: {
-            alwaysTryTypes: true,
-          },
         },
       },
     },

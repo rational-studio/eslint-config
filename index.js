@@ -3,6 +3,7 @@ module.exports = {
     recommended: {
       parser: '@typescript-eslint/parser',
       env: {
+        'jest/globals': true,
         browser: true,
         es6: true,
       },
@@ -10,10 +11,10 @@ module.exports = {
         'eslint:recommended',
         'plugin:react/recommended',
         'plugin:@typescript-eslint/recommended',
-        'plugin:monorepo/recommended',
         'plugin:import/errors',
         'plugin:import/warnings',
         'plugin:import/typescript',
+        'plugin:jest/recommended',
       ],
       globals: {
         Atomics: 'readonly',
@@ -26,13 +27,7 @@ module.exports = {
         ecmaVersion: 2018,
         sourceType: 'module',
       },
-      plugins: [
-        '@typescript-eslint',
-        'react',
-        'react-hooks',
-        'monorepo',
-        'import',
-      ],
+      plugins: ['@typescript-eslint', 'react', 'react-hooks', 'import', 'jest'],
       rules: {
         'react-hooks/rules-of-hooks': 'error',
         'react-hooks/exhaustive-deps': [
@@ -40,7 +35,6 @@ module.exports = {
           { additionalHooks: 'usePromiseCallback' },
         ],
         'react/prop-types': 'off',
-
         '@typescript-eslint/indent': 'off',
         '@typescript-eslint/explicit-function-return-type': 'off',
         '@typescript-eslint/camelcase': 'off',
@@ -50,7 +44,12 @@ module.exports = {
       },
       settings: {
         react: {
-          version: '16.10',
+          version: '16.12',
+        },
+        'import/resolver': {
+          typescript: {
+            alwaysTryTypes: true,
+          },
         },
       },
     },

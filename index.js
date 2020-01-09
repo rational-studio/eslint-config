@@ -17,6 +17,7 @@ module.exports = {
       globals: {
         Atomics: 'readonly',
         SharedArrayBuffer: 'readonly',
+        process: 'readonly',
       },
       parserOptions: {
         ecmaFeatures: {
@@ -36,8 +37,14 @@ module.exports = {
         '@typescript-eslint/indent': 'off',
         '@typescript-eslint/explicit-function-return-type': 'off',
         '@typescript-eslint/camelcase': 'off',
-        // Temporarily disabled since "as const" is not allowed atm
-        '@typescript-eslint/no-object-literal-type-assertion': 'off',
+        '@typescript-eslint/no-unused-vars': [
+          'error',
+          {
+            vars: 'all',
+            args: 'after-used',
+            ignoreRestSiblings: false,
+          },
+        ],
         'react/display-name': 'off',
       },
       settings: {

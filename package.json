@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rational-studio/eslint-plugin-rational-studio.git"
+    "url": "git+https://github.com/rational-studio/eslint-config.git"
   },
   "author": "Zhongliang Wang",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rational-studio/eslint-plugin-rational-studio/issues"
+    "url": "https://github.com/rational-studio/eslint-config/issues"
   },
-  "homepage": "https://github.com/rational-studio/eslint-plugin-rational-studio#readme",
+  "homepage": "https://github.com/rational-studio/eslint-config#readme",
   "devDependencies": {
     "prettier": "^1.19.1",
     "typescript": "3.8.3"

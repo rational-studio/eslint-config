@@ -1,5 +1,5 @@
 {
-  "name": "eslint-plugin-rational-studio",
+  "name": "@rational/eslint-config",
   "version": "0.6.0",
   "description": "ESLint Rules used in Rational Studio",
   "main": "index.js",
@@ -20,6 +20,9 @@
   "devDependencies": {
     "prettier": "^1.19.1",
     "typescript": "3.8.3"
+  },
+  "peerDependencies": {
+    "eslint": ">= 3"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "~2.23.0",

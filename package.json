@@ -1,6 +1,6 @@
 {
   "name": "@rational/eslint-config",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "description": "ESLint Rules used in Rational Studio",
   "main": "index.js",
   "scripts": {
@@ -30,7 +30,7 @@
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "~2.31.0",
     "@typescript-eslint/parser": "~2.31.0",
-    "eslint": "~6.8.0",
+    "eslint": "~7.0.0",
     "eslint-plugin-jest": "^23.10.0",
     "eslint-plugin-react": "~7.19.0",
     "eslint-plugin-react-hooks": "~4.0.0"

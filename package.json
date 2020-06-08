@@ -1,6 +1,6 @@
 {
   "name": "@rational/eslint-config",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "ESLint Rules used in Rational Studio",
   "main": "index.js",
   "scripts": {
@@ -22,17 +22,17 @@
   },
   "devDependencies": {
     "prettier": "^2.0.5",
-    "typescript": "3.9.3"
+    "typescript": "3.9.5"
   },
   "peerDependencies": {
     "eslint": ">=7"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "~3.0.0",
-    "@typescript-eslint/parser": "~3.0.0",
+    "@typescript-eslint/eslint-plugin": "~3.1.0",
+    "@typescript-eslint/parser": "~3.1.0",
     "eslint": "~7.0.0",
-    "eslint-plugin-jest": "^23.13.1",
+    "eslint-plugin-jest": "^23.13.2",
     "eslint-plugin-react": "~7.20.0",
-    "eslint-plugin-react-hooks": "~4.0.2"
+    "eslint-plugin-react-hooks": "~4.0.4"
   }
 }

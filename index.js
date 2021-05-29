@@ -3,7 +3,6 @@ module.exports = {
     recommended: {
       parser: '@typescript-eslint/parser',
       env: {
-        'jest/globals': true,
         browser: true,
         es6: true,
       },
@@ -11,7 +10,6 @@ module.exports = {
         'eslint:recommended',
         'plugin:@typescript-eslint/recommended',
         'plugin:react/recommended',
-        'plugin:jest/recommended',
       ],
       globals: {
         Atomics: 'readonly',
@@ -25,7 +23,7 @@ module.exports = {
         ecmaVersion: 2018,
         sourceType: 'module',
       },
-      plugins: ['@typescript-eslint', 'react', 'react-hooks', 'jest'],
+      plugins: ['@typescript-eslint', 'react', 'react-hooks'],
       rules: {
         'react-hooks/rules-of-hooks': 'error',
         'react-hooks/exhaustive-deps': 'warn',

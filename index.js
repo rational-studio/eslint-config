@@ -28,19 +28,17 @@ module.exports = {
       plugins: ['@typescript-eslint', 'react', 'react-hooks', 'jest'],
       rules: {
         'react-hooks/rules-of-hooks': 'error',
-        'react-hooks/exhaustive-deps': [
-          'warn',
-          { additionalHooks: 'usePromiseCallback' },
-        ],
+        'react-hooks/exhaustive-deps': 'warn',
         'react/prop-types': 'off',
         '@typescript-eslint/indent': 'off',
+        '@typescript-eslint/explicit-module-boundary-types': 'off',
         '@typescript-eslint/explicit-function-return-type': 'off',
-        '@typescript-eslint/no-unused-vars': [
+        '@typescript-eslint/no-non-null-assertion': 'off',
+        '@typescript-eslint/ban-ts-comment': [
           'error',
           {
-            vars: 'all',
-            args: 'after-used',
-            ignoreRestSiblings: false,
+            'ts-ignore': true,
+            'ts-expect-error': false,
           },
         ],
         'react/display-name': 'off',

@@ -26,7 +26,12 @@ module.exports = {
       plugins: ['@typescript-eslint', 'react', 'react-hooks'],
       rules: {
         'react-hooks/rules-of-hooks': 'error',
-        'react-hooks/exhaustive-deps': 'warn',
+        'react-hooks/exhaustive-deps': [
+          'warn',
+          {
+            additionalHooks: '(useDrag|useDrop)',
+          },
+        ],
         'react/prop-types': 'off',
         '@typescript-eslint/indent': 'off',
         '@typescript-eslint/explicit-module-boundary-types': 'off',
